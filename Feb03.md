@@ -11,4 +11,4 @@ nonlinear outside the given data range.
 predicted price, and the first house is the worst deal because its actual price has the highest markup from the predicted price.  
     However, this model is very simple, taking into  account only the number of bedrooms of a house while ignoring other factors like size, facilities, neighborhood, etc. 
 
-Script for this excercise
+    [Script for this excercise](20210203.py)
