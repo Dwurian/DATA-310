@@ -2,7 +2,7 @@
 
 ## Informal Excercises 
 
-1. Jan_29
+1. [Feb_3](Feb03.md)
 2. Feb_5
 3. Feb_12
 
