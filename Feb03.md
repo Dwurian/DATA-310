@@ -5,7 +5,7 @@ According to Maroney, traditional programming is writing the rules, feeding the 
 is feeding the data and answers to the machine and the asking the machine to learn the rules. 
 
 ## Question 2
-2. The first answer is `21.99785`, and the second answer is `21.99998`. They are different because machine learning accounts for the probability that the true relationship is 
+The first answer is `21.99785`, and the second answer is `21.99998`. They are different because machine learning accounts for the probability that the true relationship is 
 nonlinear outside the given data range. 
 
 ## Question 3
