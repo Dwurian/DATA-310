@@ -6,12 +6,13 @@ is feeding the data and answers to the machine and the asking the machine to lea
 2. The first answer is `21.99785`, and the second answer is `21.99998`. They are different because machine learning accounts for the probability that the true relationship is 
 nonlinear outside the given data range. 
 
-3. When using the numbers of bedrooms to predict the price, the predicted prices and actual prices can be seen in the chart below: 
+3. When using the numbers of bedrooms to predict the price, the actual prices and predicted prices can be seen in the chart below: 
 
 | |228 Church St|160 Holly Point Rd|760 New Point Comfort Hwy|6138 E River Rd|984 Finchetts Wharf Rd|4403 New Point Comfort Hwy|
-|:-:|:-|:-|:-|:-|:-|:-|
-|**Predicted Price (thousand dollars)**|299.81076|234.55469|365.0668|299.81076|169.29863|234.55469|
+|:-:|-:|-:|-:|-:|-:|-:|
 |**Actual Price (thousand dollars)**|339.00|  97.00|347.50|289.00|250.00|229.00|
+|**Predicted Price (thousand dollars)**|299.81076|234.55469|365.0668|299.81076|169.29863|234.55469|
+|**Price Markup (thousand dollars)**|99.1892395|-137.5546875|-17.56680298|-10.8107605|80.70137024|-5.5546875|
 
 `[99.1892395  -137.5546875   -17.56680298 
 -10.8107605    80.70135498   -5.5546875]`. Therefore, based on the model, the second, third, fourth, and sixth houses are good deals because their actual price is lower than the 
