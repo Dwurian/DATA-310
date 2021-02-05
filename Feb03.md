@@ -14,7 +14,7 @@ nonlinear outside the given data range.
 |**Predicted Price (thousand dollars)**|299.81076|234.55469|365.0668|299.81076|169.29863|234.55469|
 |**Price Markup (thousand dollars)**|99.1892395|-137.5546875|-17.56680298|-10.8107605|80.70137024|-5.5546875|
 
-    Therefore, based on the model, the second, third, fourth, and sixth houses are good deals because their actual price is lower than the 
+  Therefore, based on the model, the second, third, fourth, and sixth houses are good deals because their actual price is lower than the 
 predicted price, and the first house is the worst deal because its actual price has the highest markup from the predicted price.  
     However, this model is very simple, taking into  account only the number of bedrooms of a house while ignoring other factors like size, facilities, neighborhood, etc. 
 
