@@ -1,12 +1,15 @@
 # Feb 3 Informal Response
 
-1. According to Maroney, traditional programming is writing the rules, feeding the data and then asking the machine to compile the answers, while machine learning 
+## Question 1
+According to Maroney, traditional programming is writing the rules, feeding the data and then asking the machine to compile the answers, while machine learning 
 is feeding the data and answers to the machine and the asking the machine to learn the rules. 
 
+## Question 2
 2. The first answer is `21.99785`, and the second answer is `21.99998`. They are different because machine learning accounts for the probability that the true relationship is 
 nonlinear outside the given data range. 
 
-3. When using the numbers of bedrooms to predict the price, the actual prices and predicted prices can be seen in the chart below: 
+## Question 3
+When using the numbers of bedrooms to predict the price, the actual prices and predicted prices can be seen in the chart below: 
 
 | |228 Church St|160 Holly Point Rd|760 New Point Comfort Hwy|6138 E River Rd|984 Finchetts Wharf Rd|4403 New Point Comfort Hwy|
 |:-:|-:|-:|-:|-:|-:|-:|
