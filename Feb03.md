@@ -13,7 +13,7 @@ When using the numbers of bedrooms to predict the price, the actual prices and p
 
 | |228 Church St|160 Holly Point Rd|760 New Point Comfort Hwy|6138 E River Rd|984 Finchetts Wharf Rd|4403 New Point Comfort Hwy|
 |:-:|-:|-:|-:|-:|-:|-:|
-|**Actual Price (thousand dollars)**|339.00|  97.00|347.50|289.00|250.00|229.00|
+|**Actual Price (thousand dollars)**|399.00|  97.00|347.50|289.00|250.00|229.00|
 |**Predicted Price (thousand dollars)**|299.81076|234.55469|365.0668|299.81076|169.29863|234.55469|
 |**Price Markup (thousand dollars)**|99.1892395|-137.5546875|-17.56680298|-10.8107605|80.70137024|-5.5546875|
 
