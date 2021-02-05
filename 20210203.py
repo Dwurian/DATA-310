@@ -23,9 +23,9 @@ housing.compile(optimizer = 'sgd', loss = 'mean_squared_error')
 bed = np.array([4.0, 3.0, 5.0, 4.0, 2.0, 3.0], dtype = float)
 pricek = np.array([399.0, 97.0, 347.5, 289.0, 250.0, 229.0], dtype = float)
 
-model.fit(bed, pricek, epochs = 500)
+housing.fit(bed, pricek, epochs = 500)
 
-pricepred = np.squeeze(model.predict(bed))
+pricepred = np.squeeze(housing.predict(bed))
 
 print("1. First answer: " + str(first_ans) + ", Second answer: " + str(second_ans))
 
