@@ -20,10 +20,14 @@ The loss function translates the objective into a numerical value that we want t
 
 3. There are 10000 images, and their dimensions are 28 by 28
 
-4. See the script
+4. See [the script](20210205.py)
 
 5. The selected test image is categorized as 4
 
 6. The selected test image and its corresponding histogram are displayed below: 
 
+![test_image](test_image.png "Selected Test Image")
+Selected Test Image
 
+![histogram](histogram.png "Corresponding Histogram")
+Corresponding Histogram
