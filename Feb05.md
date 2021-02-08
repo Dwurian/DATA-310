@@ -14,10 +14,16 @@ The loss function translates the objective into a numerical value that we want t
 
 ## Question D
 
-1. There are 60000 images, and their dimensions are 28 $\times$ 28
+1. There are 60000 images, and their dimensions are 28 by 28
 
 2. The length of the labels training set is 60000
 
-3. There are 10000 images, and their dimensions are (28, 28)
+3. There are 10000 images, and their dimensions are 28 by 28
 
-5. The test image with the index 42 is categorized as 4
+4. See the script
+
+5. The selected test image is categorized as 4
+
+6. The selected test image and its corresponding histogram are displayed below: 
+
+
