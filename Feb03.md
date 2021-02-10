@@ -1,4 +1,4 @@
-# Feb 3 Informal Response
+# Feb 3 Informal Response (Housing)
 
 ## Question 1
 According to Maroney, traditional programming is writing the rules, feeding the data and then asking the machine to compile the answers, while machine learning 
