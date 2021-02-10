@@ -3,7 +3,7 @@
 ## Informal Excercises 
 
 1. [Feb_3](Feb03.md)
-2. [Feb_5](Feb05.md)
+2. [Feb_10](Feb10.md)
 3. Feb_12
 
 ## Projects 
