@@ -26,10 +26,6 @@ The loss function translates the objective into a numerical value that we want t
 
 6. The selected test image and its corresponding histogram are displayed below: 
 
-![test_image](test_image.png "Selected Test Image")  
-Selected Test Image
+![fig](fig.png "Figure")  
 
-![histogram](histogram.png "Corresponding Histogram")  
-Corresponding Histogram
-
-[Script for this excercise](20210205.py)
+[Script for this excercise](20210210.py)
