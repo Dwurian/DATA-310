@@ -8,7 +8,7 @@
 
 ## Projects 
 
-1. [Mini_Project_1](Mini_Project_1.md) 
+1. [Mini_Project_1](Mini_Project_1.md)  
     [Project output](output_from_Dance.avi)
 2. Project_2
 
