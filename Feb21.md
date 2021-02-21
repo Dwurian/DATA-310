@@ -8,4 +8,8 @@ The image I selected is a photo of buildings, as shown below:
 
 The first filter I selected is the in-class filter: 
 
-![filter1](https://latex.codecogs.com/svg.latex?\begin{bmatrix}&space;-1&space;&&space;-2&space;&&space;-1&space;\\&space;0&space;&&space;0&space;&&space;0&space;\\&space;1&space;&&space;2&space;&&space;1&space;\end{bmatrix})
+![filter1](filter1_matrix.svg)
+
+The resulting image is: 
+
+![filter1](filter1.png)
