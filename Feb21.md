@@ -55,3 +55,7 @@ This method is useful because a) it reduces the size of the image for ease of co
 The result of the convolution is: 
 
 ![convolution](convolution.svg)
+
+## Script
+
+The script of this response can be found here.
