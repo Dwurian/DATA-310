@@ -44,4 +44,14 @@ Convolving filters are important because they can help detect the outlines of ob
 
 Next I modify the output from the third filter with pooling, the resulting image is: 
 
+![pooling](pooling.png)
 
+The resulting image seem to successfully further emphasize the edges. The provided pooling filter is maximizing, i.e., the pixel with the highest value in a 2 by 2 matrix of pixels is selected. The resulting image reduced in size
+
+This method is useful because a) it reduces the size of the image for ease of computation and storage and b) it further emphasize the effects of the filter. 
+
+## Bonus Question (Convolution Calculation)
+
+The result of the convolution is: 
+
+![convolution](convolution.svg)
