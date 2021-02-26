@@ -3,6 +3,7 @@
 ## Convolutions
 
 1. Convolve the filters  
-    [Filter 1](Fil1.svg)
-    on the matrix 
+    ![Filter 1](Fil1.svg) and ![Filter 2](Fil2.svg)  
+    on the matrix  
+    
 3. 
