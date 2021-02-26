@@ -7,11 +7,11 @@
     on the matrix  
     ![Matrix](Matrix.svg).  
     The results are, respectively:  
-    ![Result 1](Result1.svg)  
+    ![Result 1](Result_1.svg)  
     ```
     [[0, -2, -2, 5, 0, -1, 1],  
      []
     ```
     and  
-    ![Result 2](Result2.svg)  
+    ![Result 2](Result_2.svg)  
 3. 
