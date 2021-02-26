@@ -50,4 +50,5 @@ For this exercise, I scraped 400 house listings in New Orleans from Zillow. To m
 6. Comparing MSE and MAE, it is not hard to see that MAE is much smaller than MSE. This is because the in calculating MSE, the value of the errors has been squared.  
 
 [Scraping script](zillow_scrape.py)
+
 [Main script for the exercise](20200226.py)
