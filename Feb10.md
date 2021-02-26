@@ -20,7 +20,7 @@ The loss function translates the objective into a numerical value that we want t
 
 3. There are 10000 images, and their dimensions are 28 by 28
 
-4. See [the script](20210205.py)
+4. See [the script](20210210.py)
 
 5. The selected test image is categorized as 4
 
