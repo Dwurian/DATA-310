@@ -28,4 +28,7 @@
      [ 0,  5,  4,  2,  2,  2,  0],
      [ 3,  4,  1,  3,  2,  1, -3]]
     ```
+    
+2. The purpose of convolving a filter through an image matrix is to hightlight and/or extract certain features of an image for ease of understanding. 
+
 3. 
