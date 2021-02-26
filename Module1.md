@@ -31,4 +31,4 @@
     
 2. The purpose of convolving a filter through an image matrix is to hightlight and/or extract certain features of an image for ease of understanding. 
 
-3. 
+3. We may want to include more than one filter to hightlight more features and gettinga better understanding of the image. In my handwritten number model, I did not include any filter, because the image from the dataset has been pre-processed. While it is possible that filters might have been applied during the pre-processing, there is no filter applied for my model. 
