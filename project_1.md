@@ -97,7 +97,7 @@ Below are some statistics from the three models:
 
 And here are these statistics visualized: 
 
-![error_hist](error_hist.png)
+![mse_mae](mse_mae.png)
 ![R_squared_comparison](R_squared_comparison.png)
 
 We can see that while the performance of Non Locational Model and Zipcode-Linear Model are similar, the Embedded Model results in significantly lower MSE and MAE and higher 
