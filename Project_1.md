@@ -120,4 +120,5 @@ the Embedded Model occurs near 0. This means that the Embedded model is more unb
 
 ## Scripts
 [Scraping Script](zillow_scrape.py)
-[Project Script](Project_1.py)
+
+[Project Script](project_1.py)
