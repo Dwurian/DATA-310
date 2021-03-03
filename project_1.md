@@ -6,7 +6,7 @@ and compare those two models' predictive power to the first model.
 
 ## Data
 
-The data I used for this project is scraped from Zillow on Friday, Feb. 2, 2021 with a [scraping script](zillow_scrape.py). I scraped 400 homes listed on 
+The data I used for this project is scraped from Zillow on Friday, Feb. 26, 2021 with a [scraping script](zillow_scrape.py). I scraped 400 homes listed on 
 Zillow in the city of New Orleans, Louisiana, each of which is represented by an observation in the dataset. The variables included are the listing price 
 (`prices`), number of bedrooms (`no_beds`), number of bathrooms (`baths`), square footage (`sqft`), and zipcode (`zip`). I then dropped any observations 
 with any unavialable data, which left the dataset with 386 observations. 
