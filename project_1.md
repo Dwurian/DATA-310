@@ -14,9 +14,9 @@ with any unavialable data, which left the dataset with 386 observations.
 ## Model
 
 The first model I specify (called Non Location Model below) uses number of bedrooms (`no_beds`), number of bathrooms (`baths`) and square footage (`sqft`) to 
-predict listing price (`prices`). The model is a sequential model with an input layer that takes the input shape of `(3,)`, followed by a dense layer with 3 
-units and no activation function, then ending with a dense layer of 1 unit and no activation function. I used stochastic gradient descent as the optimizer and 
-mean squared error as the loss function. The model is trained over 1000 epochs. 
+predict listing price (`prices`). All data are standardized before passing into the model. The model is a sequential model with an input layer that takes the 
+input shape of `(3,)`, followed by a dense layer with 3 units and no activation function, then ending with a dense layer of 1 unit and no activation function. 
+I used stochastic gradient descent as the optimizer and mean squared error as the loss function. The model is trained over 1000 epochs. 
 
 ## Output
 
@@ -55,7 +55,7 @@ I specified two models to use zipcode of each home as a spatial variable in the 
 
 In the first model with zipcode, I treat the zipcode as a numeric data alongside `no_beds`, `baths` and `sqft`. Hence, the structure of this model is identical to the 
 Non Locational Model except the input layer takes the shape of `(4,)`, and the first dense layer has 4 units. I call this the Zipcode-Linear Model, because this model 
-assumes the zipcode numbers has a linear relationship to the listed prices. 
+assumes the zipcode numbers has a linear relationship to the listed prices. All data are standardized before passing into the model. 
 
 Here is the scatterplot of prediction prices vs actual asking prices: 
 
@@ -69,7 +69,7 @@ However, zipcode are not numerical values. Instead, they are categorical. To tre
 which goes from 0 to 16, each integer corresponding to a unique zipcode. The model, which I call the Embedded Model is structured in the following way: 
 
 1. The model takes the categorical variable (`code`) and the numerical variables (`no_beds`, `baths`, `sqft`) seperately. 
-2. The numerical variables are passed through an input layer of shape `(3,)`.
+2. The numerical variables (standardized) are passed through an input layer of shape `(3,)`.
 3. The categorical variable is passed through an input layer of shape `(1,)`.
 4. The categorical variable is passed through an embedding layer with an input dimension of 17 and an output dimension of 10 and an input length of 1. The input dimension 
 corresponds to the number of existing categories, and the input length indicates the number of categorical variables. The output dimension is a hyperparameter that I set 
