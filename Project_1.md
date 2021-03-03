@@ -25,15 +25,21 @@ The model has a mean squared error of `316130503376.13`, a mean absolute error o
 
 The model loss over the epochs can be seen below: 
 
+![simple_model_loss](simple_model_loss.png)
+
 Here we can see that although there are fluctuations, the loss function seem to stop trending downwards after approximately 200 epochs. Intuitively, this means 
 that the model has stopped learning after about 200 epochs of training. 
 
 The following graph is a histogram of the errors: 
 
+![simple_error_hist](simple_error_hist.png)
+
 Here we can see that although the histogram has a vaguely bell-like shape, the peak is above 0, meaning that the predictions of the model are biased towards 
 overestimating the prices. 
 
 Finally, the scatterplot of prediction prices vs actual asking prices: 
+
+![simple](simple.png)
 
 Here, the scattered points do not seem to converge near the 45 degrees trend, meaning the prediction prices are very different from the actual asking prices. 
 
@@ -52,6 +58,8 @@ Non Locational Model except the input layer takes the shape of `(4,)`, and the f
 assumes the zipcode numbers has a linear relationship to the listed prices. 
 
 Here is the scatterplot of prediction prices vs actual asking prices: 
+
+![zip-linear](zip-linear.png)
 
 The scattered points do not seem to converge near the 45 degrees trend, meaning the prediction prices are very different from the actual asking prices. 
 
@@ -73,6 +81,8 @@ arbitrarily.
 
 Here is the scatterplot of prediction prices vs actual asking prices: 
 
+![embedded](embedded.png)
+
 The scattered points seem to converge near the 45 degrees trend much better, meaning the prediction is more favorable than the other two models. 
 
 ### Model comparisons
@@ -87,20 +97,27 @@ Below are some statistics from the three models:
 
 And here are these statistics visualized: 
 
+![error_hist](error_hist.png)
+![R_squared_comparison](R_squared_comparison.png)
+
 We can see that while the performance of Non Locational Model and Zipcode-Linear Model are similar, the Embedded Model results in significantly lower MSE and MAE and higher 
 R-squared. This is because zipcode is a categorical data, so in the Zipcode-Linear Model where it is treated as a numerical data, the inclusion of zipcode as a spatial variable
 does not increase performance. 
 
 Then we can compare the model loss: 
 
+![model_loss](model_loss.png)
+
 Both the Non Locational and Zipcode-Linear models appear to have no trend after approximately 200 epochs, while the Embedded model appear to maintain a downward trend across 
 all 1000 training epochs. 
 
 And finally, the error histogram (with extreme outliers excluded): 
 
+![error_hist](error_hist.png)
+
 Although all three models feature vaguely bell-shaped error histogram, the peaks of Non Locational and Zipcode-Linear models are significantly higher than 0, while the peak of 
 the Embedded Model occurs near 0. This means that the Embedded model is more unbiased than the other two models. 
 
 ## Scripts
-Scraping Script
-Project Script
+[Scraping Script](zillow_scrape.py)
+[Project Script](Project_1.py)
