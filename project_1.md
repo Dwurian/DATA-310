@@ -1,4 +1,4 @@
-# Project 1 - Housing Price Prediction
+# Project 1 Response - Housing Price Prediction
 
 This is a report on Project 1, housing price prediction. In this report, I will describe the data, specify the model, analyse the model output,
 and then rank the homes from best to worst deal. I will also include two ways of implementing the zipcode of each home's address as a spatial variable, 
