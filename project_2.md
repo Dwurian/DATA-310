@@ -39,7 +39,7 @@ The ROC plot of the model is as follows:
 
 ![lr_auc](lr_auc.png)
 
-Here we can see that the model handles the wealth level 5 best, and predicts wealth levels 1 and 4 with good results, but is not as effective at predicting wealth levels 2 and 3. 
+Here we can see that the model handles the wealth level 5 best, and predicts wealth levels 1 and 4 with good results, but is not as effective at predicting wealth levels 2 and 3. The model has a AUC of 0.618. 
 
 ## Random Forest
 
@@ -75,6 +75,9 @@ last_rf_mod <-
   set_engine("ranger", num.threads = cores, importance = "impurity") %>%
   set_mode("classification")
 ``` 
+
+The last random forest model has an accuracy of 0.336 and an AUC of 0.627. 
+
 Then we can produce a plot of the importance of each predictor: 
 
 ![last_rf_fit](last_rf_fit.png)
@@ -105,9 +108,22 @@ Then I added the cross feature between age and education level to account for an
 
 Incorperating the cross feature seems to have mixed results across the board in all metrics. However, the impact is insignificant. 
 
-The ROC curves of the models with cross features are displayed below. Still, this model has a larger AUC for wealth levels 1,4 and 5 while lacking in levels 2 and 3. 
+The ROC curves of the models with cross features are displayed below. Still, this model has a larger AUC for wealth levels 1,4 and 5 while lacking in levels 2 and 3. The overall AUC, calculated by the average of AUC values for individual wealth levels weighted by wealth level frequencies, is 0.6195099.  
 
 ![logistic_roc](logistic_roc.png)
 
 ## Gradient Boosting
 
+The last model used is a gradient boosting model. The accuracy and AUC metrics across different wealth levels are displayed below: 
+
+|Wealth Level| Accuracy |      AUC |
+|:----------:| --------:| --------:|
+|           1| 0.8922312| 0.6448317|
+|           2| 0.8922741| 0.6467053|
+|           3| 0.8932168| 0.6471939|
+|           4| 0.8943737| 0.6531469|
+|           5| 0.8970305| 0.6437303|
+
+The predicted probabilities plots are displayed below: 
+
+![pdf1](pdf1.png) ![pdf2](pdf2.png) ![pdf3](pdf3.png) 
