@@ -124,6 +124,13 @@ The last model used is a gradient boosting model. The accuracy and AUC metrics a
 |           4| 0.8943737| 0.6531469|
 |           5| 0.8970305| 0.6437303|
 
-The predicted probabilities plots are displayed below: 
+The predicted probabilities plots of logistic regression and boosted tree are displayed below: 
 
-![pdf1](pdf1.png) ![pdf2](pdf2.png) ![pdf3](pdf3.png) 
+![pdf1](pdf1.png) ![pdf2](pdf2.png) ![pdf3](pdf3.png) ![pdf4](pdf4.png) ![pdf5](pdf5.png) 
+
+Here we can see that all plots have a peak around the 0.1 range for either model. This is normal because considering there is no level of wealth which has a higher frequency than 0.5, meaning that given a specified wealth level, the majority of the data will not belong to that wealth level. However, across the board, we can see that the 0.1 peak is reduced in the boosted tree, and higher probabilities are emphasized. 
+
+The ROC curves of boosted tree are displayed below: 
+
+![roc1](roc1.png) ![roc2](roc2.png) ![roc3](roc3.png) ![roc4](roc4.png) ![roc5](roc5.png) 
+
