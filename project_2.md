@@ -84,7 +84,7 @@ Then we can produce a plot of the importance of each predictor:
 
 Therefore, the most important predictors are education level and age, with the family size following, and gender has relatively low importance. 
 
-## Logistic Regression
+## Logistic Regression with Cross Feature
 
 The third model used is logistic regression. First I use age, gender, education level and family size as predictors to predict the different wealth levels. Below are several model evaluation metrics across different target levels: 
 
@@ -134,3 +134,14 @@ The ROC curves of boosted tree are displayed below:
 
 ![roc1](roc1.png) ![roc2](roc2.png) ![roc3](roc3.png) ![roc4](roc4.png) ![roc5](roc5.png) 
 
+Here we can see that the boosted tree model has a much more consistent performance across the wealth levels. The overall AUC, calculated by the average of AUC values for individual wealth levels weighted by wealth level frequencies, is 0.6469297. 
+
+## Model Comparison 
+
+Below are the area under the ROC curve values for the four models: 
+
+|Penalized Logistic Regression|Random Forest|Logistic Regression with Cross Feature|Boosted Tree|
+|:-:|:-:|:-:|:-:|
+|0.618|0.627|0.620|0.647|
+
+Among the four models, the boosted tree model has the highest AUC value, and can achieve consistent performance across all five wealth levels. Therefore, it is the best performing model with least discrepancies among the five wealth outcomes. 
