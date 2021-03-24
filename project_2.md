@@ -2,11 +2,7 @@
 
 This is a report on Project 2. In this project, I use the DHS survey data on Jordan to predict individual's wealth level. 
 
-The first model used is penalized logistic regression. The 30 penalty values is in a geometric sequence that starts with 0.0001 and ends with 0.1. The common ratio is therefore approximately 1.27. The AUC to penalty curve can be found below. Note that the x-axis is not in a linear scale, equidistant points on the x direction share the same ratio instead of difference. 
-
-![lr_plot](lr_plot.png)
-
-Across the penalty values, the top 15 that results in the largest areas under the ROC curve are: 
+The first model used is penalized logistic regression. The 30 penalty values is in a geometric sequence that starts with 0.0001 and ends with 0.1. The common ratio is therefore approximately 1.27. Across the penalty values, the top 15 that results in the largest areas under the ROC curve are: 
 
 ```
 penalty .metric .estimator  mean     n std_err .config              
@@ -29,3 +25,16 @@ penalty .metric .estimator  mean     n std_err .config
 ```
 Here we can see that the models with penalty values 0.0001, 0.000127, and 0.000161 has the largest AUC, being 0.621. 
 
+The AUC to penalty curve can be found below. Note that the x-axis is not in a linear scale, equidistant points on the x direction share the same ratio in penalty values instead of difference. 
+
+![lr_plot](lr_plot.png)
+
+It appears that the AUC gradually decreased from the first model (penalty value = 0.001) to the 21st model (penalty value = 0.0117210), and stayed steady towards the 24th model (penalty value = 0.0239503), after which the AUC dropped significantly, then stayed steady again from the 27th model (penalty value = 0.0489390) to the 29th model (penalty value = 0.0788046). From this, I think the irrelevant predictors are gradually removed from the model throughout the first to 21st model (penalty value from 0.001 to 0.0117210), after which relevant predictors were removed from the model, resulting in significant drops in the AUC. 
+
+I choose the penalty value of 0.000853168 (the 10th model) because it is represented by the last point in the plot that belongs to the initial gradual descent in AUC. 
+
+The ROC plot of the model is as follows: 
+
+![lr_auc](lr_auc.png)
+
+Here we can see that the model handles the wealth level 5 best, and predicts wealth levels 1 and 4 with good results, but is not as effective at predicting wealth levels 2 and 3. 
