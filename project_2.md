@@ -1,4 +1,13 @@
-# Project 2 Response - Wealth Prediction
+# Project 2 Response - DHS Wealth Prediction
+
+This is a report on Project 2. In this project, I use the DHS survey data on Jordan to predict individual's wealth level. 
+
+The first model used is penalized logistic regression. The 30 penalty values is in a geometric sequence that starts with 0.0001 and ends with 0.1. The common ratio is therefore approximately 1.27. The AUC to penalty curve can be found below. Note that the x-axis is not in a linear scale, equidistant points on the x direction share the same ratio instead of difference. 
+
+![lr_plot](lr_plot.png)
+
+Across the penalty values, the top 15 that results in the largest areas under the ROC curve are: 
+
 ```
 penalty .metric .estimator  mean     n std_err .config              
       <dbl> <chr>   <chr>      <dbl> <int>   <dbl> <chr>                
@@ -18,3 +27,5 @@ penalty .metric .estimator  mean     n std_err .config
 14 0.00221  roc_auc hand_till  0.612     1      NA Preprocessor1_Model14
 15 0.00281  roc_auc hand_till  0.609     1      NA Preprocessor1_Model15 
 ```
+Here we can see that the models with penalty values 0.0001, 0.000127, and 0.000161 has the largest AUC, being 0.621. 
+
