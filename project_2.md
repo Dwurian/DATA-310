@@ -1,6 +1,6 @@
 # Project 2 Response - DHS Wealth Prediction
 
-This is a report on Project 2. In this project, I use the DHS survey data on Jordan to predict individual's wealth level. 
+This is a report on Project 2. In this project, I use the DHS survey data on Jordan to predict individual's wealth level. The variables age (`age`), education level (`edu`), gender (`gender`) and family size (`size`). 
 
 ## Penalized Logistic Regression
 
@@ -80,3 +80,34 @@ Then we can produce a plot of the importance of each predictor:
 ![last_rf_fit](last_rf_fit.png)
 
 Therefore, the most important predictors are education level and age, with the family size following, and gender has relatively low importance. 
+
+## Logistic Regression
+
+The third model used is logistic regression. First I use age, gender, education level and family size as predictors to predict the different wealth levels. Below are several model evaluation metrics across different target levels: 
+
+|Wealth Level| Accuracy |     Loss |      AUC |
+|:----------:| --------:| --------:| --------:|
+|           1| 0.7245576| 0.5577476| 0.6812093|
+|           2| 0.7586665| 0.5489602| 0.5604080|
+|           3| 0.7965463| 0.5033618| 0.5474337|
+|           4| 0.8458242| 0.4170481| 0.6298179|
+|           5| 0.8921884| 0.3148832| 0.7072637|
+
+Then I added the cross feature between age and education level to account for any generational difference in the return of education. Below are several model evaluation metrics across different target levels:
+
+|Wealth Level| Accuracy |     Loss |      AUC |
+|:----------:| --------:| --------:| --------:|
+|           1| 0.7258431| 0.5581085| 0.6807461|
+|           2| 0.7586665| 0.5492049| 0.5597088|
+|           3| 0.7965463| 0.5031614| 0.5501173|
+|           4| 0.8458242| 0.4167804| 0.6292948|
+|           5| 0.8916313| 0.3147979| 0.7066786|
+
+Incorperating the cross feature seems to have mixed results across the board in all metrics. However, the impact is insignificant. 
+
+The ROC curves of the models with cross features are displayed below. Still, this model has a larger AUC for wealth levels 1,4 and 5 while lacking in levels 2 and 3. 
+
+![logistic_roc](logistic_roc.png)
+
+## Gradient Boosting
+
