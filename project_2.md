@@ -145,3 +145,9 @@ Below are the area under the ROC curve values for the four models:
 |0.618|0.627|0.620|0.647|
 
 Among the four models, the boosted tree model has the highest AUC value, and can achieve consistent performance across all five wealth levels. Therefore, it is the best performing model with least discrepancies among the five wealth outcomes. 
+
+## Scripts
+
+[R script for penalized logistic regression and random forest](lr_rf.R)
+[Python script for logistic regression with cross feature](DHS_linest.py)
+[Python script for boosted tree](DHS_boostest.py)
