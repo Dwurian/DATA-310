@@ -63,3 +63,20 @@ Here we can see that generally speaking, models with 2 randomly selected predict
 
 The prediction outcomes appear to exhibit the same behavior as the penalized logistic regression model, having good performance in wealth levels 1, 4 and 5 but limited performance in wealth level 2 and 3.
 
+![rf_lr_auc](rf_lr_auc.png)
+
+Here we can see that the best random forest model perform slightly better than the best penalized logistic regression model. 
+
+Since we have found above that the best model seems to have 2 predictors and minimal node size close to 40, we can specify another random forest model with 1000 trees, 2 randomly selected predictors and a minimal node size of 40. 
+
+``` 
+last_rf_mod <-
+  rand_forest(mtry = 2, min_n = 40, trees = 1000) %>%
+  set_engine("ranger", num.threads = cores, importance = "impurity") %>%
+  set_mode("classification")
+``` 
+Then we can produce a plot of the importance of each predictor: 
+
+![last_rf_fit](last_rf_fit.png)
+
+Therefore, the most important predictors are education level and age, with the family size following, and gender with relatively low importance. 
