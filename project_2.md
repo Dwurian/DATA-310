@@ -79,4 +79,4 @@ Then we can produce a plot of the importance of each predictor:
 
 ![last_rf_fit](last_rf_fit.png)
 
-Therefore, the most important predictors are education level and age, with the family size following, and gender with relatively low importance. 
+Therefore, the most important predictors are education level and age, with the family size following, and gender has relatively low importance. 
