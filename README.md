@@ -12,6 +12,7 @@
 1. [Mini_Project_1](Mini_Project_1.md)  
     [Project output](output_of_Dance.avi)
 2. [Project_1](project_1.md)
+3. [Project_2](project_2.md)
 
 ## Cute Red Panda Video
 
