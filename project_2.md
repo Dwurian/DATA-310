@@ -149,5 +149,7 @@ Among the four models, the boosted tree model has the highest AUC value, and can
 ## Scripts
 
 [R script for penalized logistic regression and random forest](lr_rf.R)
+
 [Python script for logistic regression with cross feature](DHS_linest.py)
+
 [Python script for boosted tree](DHS_boostest.py)
