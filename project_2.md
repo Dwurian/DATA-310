@@ -2,6 +2,8 @@
 
 This is a report on Project 2. In this project, I use the DHS survey data on Jordan to predict individual's wealth level. 
 
+## Penalized Logistic Regression
+
 The first model used is penalized logistic regression. The 30 penalty values is in a geometric sequence that starts with 0.0001 and ends with 0.1. The common ratio is therefore approximately 1.27. Across the penalty values, the top 15 that results in the largest areas under the ROC curve are: 
 
 ```
@@ -38,3 +40,26 @@ The ROC plot of the model is as follows:
 ![lr_auc](lr_auc.png)
 
 Here we can see that the model handles the wealth level 5 best, and predicts wealth levels 1 and 4 with good results, but is not as effective at predicting wealth levels 2 and 3. 
+
+## Random Forest
+
+The second model used is random forest.The random forest models all contain 1000 trees, between 1 and 4 predictors are randomly selected, and the minimal node size vary from 1 to 40. Below are the AUC values with their corresponding number of randomly selected predictors and minimal node size. 
+
+![rf_res](rf_res.png)
+
+We can then trace the general outline of AUC against minimal node sizes with different number of randomly selected predictors: 
+
+![rf_res_trace](rf_res_trace.png)
+
+Here we can see that generally speaking, models with 2 randomly selected predictors seem to work best, followed by models with 1 randomly selected predictor, then 3 and 4. Models with any number of predictors seem to increase in effectiveness as minimal node size gets close to 40, with the exception of models with 1 randomly selected predictor showing a slight downward trend. The top model is: 
+
+``` 
+   mtry min_n .config              
+  <int> <int> <chr>                
+1     2    37 Preprocessor1_Model12
+``` 
+
+![rf_auc](rf_auc.png)
+
+The prediction outcomes appear to exhibit the same behavior as the penalized logistic regression model, having good performance in wealth levels 1, 4 and 5 but limited performance in wealth level 2 and 3.
+
