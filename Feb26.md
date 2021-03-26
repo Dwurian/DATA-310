@@ -1,4 +1,4 @@
-# Module 1 Response
+# Feb 26 Informal Response
 
 ## Convolutions
 
