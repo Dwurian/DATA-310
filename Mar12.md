@@ -1,4 +1,4 @@
-# March 12 Informal Response
+# Mar 12 Informal Response
 
 I downloaded the DHS data from Jordan. After data cleaning and formatting, I produced heat maps for the raw, standardized, normalized, and percentized data. 
 
