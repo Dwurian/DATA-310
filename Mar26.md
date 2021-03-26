@@ -1,4 +1,4 @@
-# March 26 Informal Response
+# Mar 26 Informal Response
 
 For this excercise I downloaded and compiled the geospatial raster data for Jordan. The raster is stacked on 52 second-level administration districts. The summary statistics of several districts are displayed below: 
 
