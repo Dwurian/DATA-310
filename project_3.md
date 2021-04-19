@@ -52,3 +52,6 @@ Root mean suqared error
 Judging from the results above, linear regression model is the more accurate model, since the results of random forest show no variation. 
 
 The spatial variation throughout the selected area may be attributed to the existence of metropolitan areas. The area with the largest difference and variance in the linear regression model is where the city of Irbid is located, the largest city of the region and the second largest metropolitan area in Jordan. Although some characteristics of urban areas can be reflected by night time light, this variable is not the best indicator of urban areas, since the density of urban residential areas might result in a small difference of night time light from the rural areas. 
+
+## Scripts
+R script for project 3 can be accessed [here](raster.R).
