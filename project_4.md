@@ -10,3 +10,8 @@ The microplastic concentration data is accessed through USGS [here](https://www.
 
 ![watershed_map](watershed_map.png)
 
+Other data also includes geospatial raster data of population, night time light, distance to major roads (as a measure of traffic activities), and distance to natural reserves. 
+
+## Machine Learning Methods
+
+I will focus in neural networks for the project, but I might also use random forests and compare the results if time allows. 
