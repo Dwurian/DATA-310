@@ -16,6 +16,7 @@
 2. [Project_1](project_1.md)
 3. [Project_2](project_2.md)
 4. [Project_3](project_3.md)
+5. [Project_4](project_4.md)
 
 ## Cute Red Panda Video
 
